@@ -34,6 +34,8 @@ for song in queue:
     add_song_to_queue(song, chan_num)
     chan_num += 1
 
+os.remove("C:\\Users\\josef\\Downloads\\Playlist.txt")
+
 first = True
 first2 = True
 
@@ -51,7 +53,7 @@ for i in range(len(channel_queue)):
         end = time.time()
 
         delta_time = end - start
-        print(delta_time)
+        # print(delta_time)
         if(delta_time >= 20 and delta_time < 21 and first2):
             channel_queue[i+1].play(sound_queue[i+1])
             channel_queue[i+1].set_volume(0.0)
