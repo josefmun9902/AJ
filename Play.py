@@ -6,6 +6,7 @@ from tkinter import *
 root = Tk()
 root.title("AJ - Automated Jockey")
 # root.iconbitmap()
+# change
 root.geometry("400x400")
 
 pygame.mixer.init(frequency=44100, size=-16, channels=1, buffer=2**12)
